@@ -34,18 +34,18 @@ npm run lint -- --fix
   - `/protected` - 인증 필수 페이지들
   - `layout.tsx` - 루트 레이아웃 (ThemeProvider, 메타데이터)
   - `globals.css` - 전역 CSS 및 Tailwind 설정
-  
+
 - **`/components`** - React 컴포넌트들
   - `ui/` - shadcn/ui 컴포넌트들
   - 기타 기능별 컴포넌트들 (예: LoginForm)
-  
+
 - **`/lib`** - 유틸리티 및 설정
   - `/supabase`
     - `client.ts` - 브라우저 Supabase 클라이언트 (클라이언트 컴포넌트에서 사용)
     - `server.ts` - 서버 Supabase 클라이언트 (서버 컴포넌트/액션에서 사용)
     - `database.types.ts` - Supabase 자동 생성 타입
   - `utils.ts` - 헬퍼 함수 (cn, hasEnvVars 체크)
-  
+
 - **`/docs`** - 문서
 - **`/supabase`** - Supabase 로컬 개발 설정
 - **`./.claude`** - Claude Code 설정 (agents, commands, hooks)
@@ -72,6 +72,7 @@ npm run lint -- --fix
 ## 환경 설정
 
 `.env.local` 필수 변수:
+
 ```
 NEXT_PUBLIC_SUPABASE_URL=<Supabase 프로젝트 URL>
 NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=<Supabase 공개 키>
